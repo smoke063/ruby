@@ -1,0 +1,7 @@
+desc "Задача по умолчанию"
+task default: :load
+
+task :load do
+  time = Time.new
+  puts time.strftime("%Y-%m-%d %H:%M:%S")
+end

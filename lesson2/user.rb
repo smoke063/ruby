@@ -1,8 +1,17 @@
 # frozen_string_literal: true
 
-# user
+##
+# Класс Пользователя
 class User
-  attr_reader :name, :surname, :profession
+  ##
+  # Поля для чтения имя
+  attr_reader :name
+  ##
+  # Поля для чтения фамилия
+  attr_reader :surname
+  ##
+  # Поля для чтения профессия
+  attr_reader :profession
 
   def initialize(name, surname, profession)
     @name = name
@@ -10,7 +19,14 @@ class User
     @profession = profession
   end
 
+  ##
+  # Возращает Имя и Фамилию
+  #
+  # = Пример использования
+  #
+  #   user = User.new
+  #   user.fio
   def fio
-    "ФИО: #{@surname} #{@surname}"
+    "ФИО: #{@name} #{@surname}"
   end
 end
