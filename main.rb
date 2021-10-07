@@ -4,6 +4,7 @@ require_relative 'hello'
 require_relative 'user'
 require_relative 'group'
 require_relative 'foo'
+require_relative 'list'
 
 hello = Hello.new('world')
 hello.say
@@ -26,3 +27,8 @@ puts foo.test
 puts foo.say
 # не существует
 puts foo.sf
+
+list = List.new(6, 'dfg', 55, foo)
+list.each do |l|
+  puts l
+end
