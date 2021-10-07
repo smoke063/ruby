@@ -21,6 +21,8 @@ user3 = User.new('name3', 'surname3', 'patronic3')
 gr = Group.new(user, user1, user2, user3)
 gr.each
 
-foo = Foo.new({ test: 'test', say: 'say' })
-foo.test
-foo.say
+foo = Foo.new({ test: 'test bla bla bla', say: 'say bla bla bla' })
+puts foo.test
+puts foo.say
+# не существует
+puts foo.sf
